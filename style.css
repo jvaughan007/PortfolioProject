@@ -73,7 +73,7 @@ body section h3 {
   margin: auto 50px;
 } 
 
-ol ul {
+.list-style {
 text-align: left;
 color: black;
 background-color: burlywood;
