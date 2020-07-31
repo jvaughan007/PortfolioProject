@@ -42,8 +42,8 @@ body header div {
   margin: auto;
   box-shadow: 4px 4px 2px grey;
   border-radius: 20px;
-  margin-left: 15px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
