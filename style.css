@@ -1,0 +1,117 @@
+img {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 4px 4px 2px grey;
+  margin-top: 100px;
+  
+}
+
+h1 {
+  padding-top: 20px;
+  margin-bottom: -10px;
+  font-family: unset;
+  color:black;
+  text-shadow: -2px -2px 0 silver;  
+}
+
+h2 {
+  font-family: unset;
+  color:black;
+  text-shadow: -2px -2px 0 silver;  
+}
+
+/* background */
+body {
+  background-image: url(images/beach.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/* header background*/
+body header div {
+  background-color:burlywood;
+  margin: auto;
+  box-shadow: 4px 4px 2px grey;
+  border-radius: 20px;
+}
+
+/* all main section info */
+section {
+  position: inherit;
+  width: 50%;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  
+}
+
+hr {
+  max-width: 500px;
+  border-color: aqua;
+}
+
+body section h3 {
+  border-radius: 5px;
+  background-color: beige;
+  border: 2px solid black;
+  margin: auto 50px;
+} 
+
+ol {
+text-align: left;
+color: black;
+background-color: burlywood;
+list-style-position: outside;
+margin-left: 130px;
+margin-right: 130px;
+padding: 3px;
+list-style-position: inside;
+border: 2px solid black;
+box-shadow: 4px 4px 2px grey;
+}
+
+footer {
+  background-color: beige;
+  margin-left: 0;
+  margin-right: 0;
+  height: 50px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 2px grey;
+}
+
+/* button design */
+.button {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.button-style {
+  color: #333;
+  background-image: linear-gradient(to bottom right, white, aquamarine, aqua);
+  border: 2px solid black;
+  box-shadow: 4px 4px 2px grey;
+}
+
+/* mouse over effect */
+a:hover{
+  font-weight: bold;
+  font-style: italic;
+}
+
