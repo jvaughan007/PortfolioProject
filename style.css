@@ -1,3 +1,4 @@
+
 img {
   width: 50%;
   min-width: 300px;
@@ -34,7 +35,6 @@ body {
   background-size: cover;
   text-align: center;
   
-  
 }
 
 /* header background*/
@@ -43,9 +43,9 @@ body header div {
   margin: auto;
   box-shadow: 4px 4px 2px grey;
   border-radius: 20px;
-  
+  margin-left: 0;
+  margin-right: 0;
 }
-
 
 /* all main section info */
 section {
@@ -78,13 +78,13 @@ ol {
 text-align: left;
 color: black;
 background-color: burlywood;
+list-style-position: outside;
 padding: 3px;
 margin-left: auto;
 margin-right: auto;
 list-style-position: inside;
 border: 2px solid black;
 box-shadow: 4px 4px 2px grey;
-max-width: 100px;
 min-width: 100px;
 }
 
