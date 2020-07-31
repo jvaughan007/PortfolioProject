@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin-left: 15px;
+  
 }
 
 /* header background*/
@@ -42,7 +42,10 @@ body header div {
   margin: auto;
   box-shadow: 4px 4px 2px grey;
   border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 10px;
 }
+
 
 /* all main section info */
 section {
