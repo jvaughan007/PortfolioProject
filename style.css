@@ -66,7 +66,7 @@ hr {
   border-color: aqua;
 }
 
-body section h2 !important {
+body section h3 {
   border-radius: 5px;
   background-color: beige;
   border: 2px solid black;
