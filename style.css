@@ -140,7 +140,14 @@ a:hover{
   color: blue;
 }
 
+/* link base looks */
 .link {
   text-decoration: underline; 
   color: black;
+}
+
+/* class for the p elements in about me section */
+.about-me {
+  text-align: left;
+  
 }
