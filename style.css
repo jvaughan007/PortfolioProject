@@ -1,153 +1,572 @@
-img {
-  width: 35%;
-  min-width: 300px;
-  height: 50%;
-  border: 2px solid black;
-  border-radius: 30px;
-  box-shadow: 4px 4px 2px grey;
-  
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  padding-top: 20px;
-  margin-bottom: -10px;
-  font-family: unset;
-  color:black;
-  text-shadow: -2px -2px 0 silver;  
+#page-wrap {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-main div article h2 {
-margin-top: 50px;
-margin-bottom: 10px;
-}
-
-h2 {
-  font-family: unset;
-  color:black;
-  text-shadow: -2px -2px 0 silver;  
-}
-
-/* background */
 body {
-  background-image: url(images/beach.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  margin: 0 auto;
+  background-color: #303633;
+  color: #303633;
 }
 
-/* header background*/
-body header div {
-  background-color:burlywood;
-  margin: auto;
-  box-shadow: 4px 4px 2px grey;
-  border-radius: 20px;
-  margin-left: 0;
-  margin-right: 0;
+img {
+  width: 100%;
 }
 
-/* all main section info */
-section {
-  position: inherit;
-  width: 50%;
-  min-width: 400px;
-  border-radius: 10px;
-  border: 2px solid black;
-  background-color: antiquewhite;
-  padding: 10px;
-  margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  
+header h1,
+h2 {
+  font-family: "Fauna One";
+  color: white;
 }
 
-hr {
-  max-width: 500px;
-  border-color: aqua;
+h3,
+h4,
+h5 {
+  font-family: "Fauna One", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
-body section h3 {
-  border-radius: 5px;
-  background-color: beige;
-  border: 2px solid black;
-  margin: auto 50px;
-} 
+.nav-btn {
+  color: #fff;
 
-ol {
-text-align: left;
-color: black;
-background-color: burlywood;
-list-style-position: outside;
-padding: 3px;
-margin-left: auto;
-margin-right: auto;
-list-style-position: inside;
-border: 2px solid black;
-box-shadow: 4px 4px 2px grey;
-min-width: 100px;
 }
 
-ul {
-text-align: left;
-color: black;
-background-color: burlywood;
-list-style-position: outside;
-padding: 3px;
-margin-left: auto;
-margin-right: auto;
-list-style-position: inside;
-border: 2px solid black;
-box-shadow: 4px 4px 2px grey;
-min-width: 100px;
+nav,
+label,
+p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4,
+h5 {
+  font-size: 1.2em;
+  margin-bottom: -10px;
+}
+
+.personal h4 {
+  margin: -2% 0 0 0;
+}
+
+main p {
+  font-size: 1.1em;
+  text-align: left;
 }
 
 footer {
-  background-color: beige;
-  margin-left: 0;
-  margin-right: 0;
-  height: 50px;
-  padding-top: 5px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  border: 2px solid black;
-  box-shadow: 4px 4px 2px grey;
-}
-
-/* button design */
-.button {
-  display: inline-block;
-  font-family: arial, sans-serif;
-  font-size: 16px;
+  background: #303633;
+  color: #ffffff;
   text-align: center;
-  font-weight: bold;
+  margin: 0% auto;
+  padding: 1px 0;
+  max-width: 900px;
+}
+
+/* Flexbox element controls */
+/* Header Formatting */
+.head-container {
+  width: 100%;
+  display: flex;
+  background-color: #303633;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.name-box {
+  flex: 1;
+  width: 100%;
+  margin-left: 2%;
+  justify-self: center;
+  text-align: center;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-self: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 2% 10%;
+  min-width: 200px;
+  text-align: right;
+}
+
+header nav ul li a {
+  color: #ffffff;
   text-decoration: none;
-  margin: 10px;
-  padding: 6px 12px;
-  border-radius: 6px;
+  margin: 0 35px 0 35px;
 }
 
-.button-style {
-  color: #333;
-  background-image: linear-gradient(to bottom right, white, aquamarine, aqua);
-  border: 2px solid black;
-  box-shadow: 4px 4px 2px grey;
+/* Main section formatting */
+
+.main-container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #ffffff;
+  max-width: 900px;
 }
 
-/* mouse over effect */
-a:hover{
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main-img {
+  justify-self: flex-start;
+  align-self: center;
+  margin: 5% 0 0 0;
+}
+
+.main-img img {
+  border-radius: 50%;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.personal {
+  justify-self: flex-start;
+  margin: 0 2% 0 2%;
+}
+
+.personal,
+h3 {
+  text-align: center;
+}
+
+/* Traits (skills) containers */
+.traits-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.traits-box {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  background-color: #303633;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+.traits-box2 {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  background-color: #303633;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+/* Projects section*/
+
+.projects-container {
+  display: flex;
+  width: 90%;
+  flex-flow: column wrap;
+  border-color: #000;
+  margin: 3% 5% 3% 5%;
+
+}
+
+.project-text {
+  padding: 0 6%;
+}
+
+.projects {
+  background-color: #303633;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  font-style: italic;
-  color: blue;
 }
 
-/* link base looks */
-.link {
-  text-decoration: underline; 
-  color: black;
+.project2 {
+  background-color: #303633;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-/* class for the p elements in about me section */
-.about-me {
+.project h4 {
+  font-size: 1.4rem;
+  background-color: #292e2c;
+  padding: 2% 0 0 4%;
+  height: 50px;
+  margin: 0 0 0 0;
+}
+
+.project2 h4 {
+  font-size: 1.4rem;
+  background-color: #292e2c;
+  padding: 2% 0 0 4%;
+  height: 50px;
+  margin: 0;
+}
+
+.project a,
+.project2 a {
+  text-decoration: none;
+  color: #bec5c2;
+}
+
+.proj1-img {
+  max-width: 45%;
+  display: flex;
+  margin-left: 60%;
+  margin-top: -20%;
+}
+
+/* Contact section*/
+
+.contact {
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  font-size: 0;
+  padding-bottom: 10px;
+}
+
+.contact-h2 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.emailadd {
+  font-size: 1.2rem;
+  background-color: #292e2c;
+  color: #fff;
+  padding: 10px 20px;
+  width: 85%;
+  text-decoration: none;
+}
+
+/* Github/LinkedIn Graphics */
+.ghmark {
+  width: 10%;
+}
+
+.ghlogo {
+  width: 30%;
+}
+
+.linkprof {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.linklogo {
+  width: 30%;
+}
+
+/* E-mail form formatting */
+
+.email-form {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1rem;
+  color: #fff;
   text-align: left;
-  
+  text-justify: left;
+  width: 85%;
+  background: #303633;
+  padding: 10px 15px;
+}
+
+.email-form textarea {
+  flex: 1;
+  justify-self: flex-end;
+  resize: none;
+  width: 100%;
+  height: 100px;
+  border: solid 2px #000;
+}
+
+.name-address-group {
+  display: flex;
+  flex-flow: column wrap;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.name-address-group input {
+  display: block;
+  width: 100%;
+  border: solid 2px #000;
+}
+
+.email-form fieldset {
+  flex: 1;
+  width: 100%;
+  align-self: center;
+  max-width: 900px;
+  border: solid 2px #000;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.bspace {
+  margin-left: 20px;
+}
+
+.formbutton {
+  border: solid 2px #bec5c2;
+  border-radius: 0;
+  background-color: #303633;
+  color: #bec5c2;
+}
+
+.bashbx {
+  flex: 1;
+  width: 65%;
+  margin-left: 17.5%;
+  height: 36px;
+  background: #000;
+  color: #fff;
+}
+
+.bashtxt {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+}
+
+/* Flexbox element controls with Media Queries */
+
+@media all and (min-width: 900px) {
+  /* Page max width/wrapping class and body formatting */
+
+  #page-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+    min-width: 920px;
+  }
+
+  body {
+    background-color: #bec5c2;
+    color: #303633;
+  }
+
+  /* Desktop header formatting */
+
+  .head-container {
+    max-width: 900px;
+    margin: auto;
+    flex-flow: column wrap-reverse;
+  }
+
+  .name-box {
+    flex: 3;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  /* Desktop header nav formatting */
+
+  header nav {
+    text-align: center;
+    align-content: center;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303633;
+  }
+
+  header nav ul li {
+    margin: 0;
+    min-width: 0;
+    float: left;
+  }
+
+  header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+    background-color: #ffffff;
+    color: #303633;
+  }
+
+  /* Desktop main section formatting */
+
+  .main-img,
+  img {
+    max-width: 400px;
+  }
+
+  /* Desktop main section flexbox formatting */
+  .container {
+    flex-flow: row wrap;
+    margin: auto;
+  }
+
+  .main-img {
+    justify-self: flex-start;
+    align-self: center;
+    margin: 2% auto;
+  }
+
+  .bashbx {
+    width: 45%;
+    margin-left: 27%;
+  }
+
+  .traits-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 97%;
+    padding-left: 2.9%;
+    margin-left: 0;
+  }
+
+  .traits-box {
+    padding: 10px 20px;
+  }
+
+  .traits-box2 {
+    padding: 10px 20px;
+    background: #292e2c;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .project h4 {
+    background-color: #292e2c;
+    width: 100%;
+    padding: 3% 0 0 4%;
+    height: 50px;
+    margin: 0 0 0 0;
+  }
+
+  .project2 h4 {
+    background-color: #303633;
+    width: 100%;
+    padding: 3% 0 0 4%;
+    height: 50px;
+    margin: 0;
+  }
+
+  .projects-container a:hover {
+    background-color: #ffffff;
+    color: #303633;
+  }
+
+  .project {
+    flex: 1;
+    min-width: 300px;
+    max-width: 49%;
+    margin-bottom: 14px;
+    background-color: #303633;
+    color: #fff;
+  }
+
+  .project2 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 49%;
+    margin-bottom: 14px;
+    background-color: #292e2c;
+    color: #fff;
+  }
+
+  .proj1-img {
+    max-width: 45%;
+    margin-left: 53%;
+    margin-top: -27%;
+    margin-bottom: -18%;
+  }
+
+  /* Desktop e-mail form formatting */
+
+  .email-form {
+    width: 85%;
+  }
+
+  .name-address-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .name-address-group input {
+    width: 204%;
+  }
+
+  .name-address-group div {
+    width: 49%;
+  }
+}
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #fff;
+  }
+
+  49% {
+    color: #fff;
+  }
+
+  60% {
+    color: transparent;
+  }
+
+  99% {
+    color: transparent;
+  }
+
+  100% {
+    color: #fff;
+  }
 }
