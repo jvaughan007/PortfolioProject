@@ -1,94 +1,182 @@
-<!DOCTYPE html> <html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Onine Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
 
-
   <body>
-
-    <!-- This is the header...obv -->
+    <!--Header below: Needs to include nav buttons. the #intro & #about divs can stay on this page. Consider moving #portfolio and #contact each to their own page-->
     <header>
       <div>
-        <h1>Joshua Vaughan</h1>
-        <h2>Software Engineer Student</h2>
-        <nav>
-         <a href="index.html#intro" class="button button-style">Intro</a>
-         <a href="index.html#about" class="button button-style">About</a>
-         <a href="index.html#contact" class="button button-style">Contact</a>
-        </nav>
+        <h1 class="myName">Joshua Vaughan:</h1>
+        <h2 class="myJobTitle">Software Engineering Student</h2>
       </div>
+
+      <div class="nav">
+        <a href="index.html#intro" id="intro-btn" class="nav-btn"> Intro </a>
+        <a href="index.html#about" id="about-btn" class="nav-btn"> About </a>
+        <a href="index.html#projects" id="projects-btn" class="nav-btn"> Projects </a>
+        <a href="index.html#contact" id="contact-btn" class="nav-btn"> Contact </a>
+        </div>
     </header>
 
+    <!-- main element signifies beginning of the "meat" of the website. -->
 
-    <!-- This is where the header ends and the intro section of the page begins. Ensure there is adequate spacing between the header and the profile picture! -->
+    <main class="main-container">
+      <!--Below is where the "intro" section is located. -->
+      <div class="main-img">
+      <img src="images/profile-pic.jpg" alt="Picture of Josh" class="profilePic" />
+      </div>  
+      <div class="container">
+      <h3 id="introHeader">Introduction</h3>
+      <p>
+        My name is Joshua Vaughan, and I am a Software Engineering student at
+        Thinkful out of Galveston, TX!
+      </p>
+      <section id="ulContainer">
+        <p id="ulHeader">Being a lifelong gaming enthusiast, I enjoy...</p>
+        <hr />
+        <ul id="hobbies">
+          <li>Working with a team to achieve a common goal</li>
+          <li>Growing and learning from difficult objectives</li>
+          <li>
+            Applying experience to help better the team and achieve victory!
+          </li>
+        </ul>
+      </section>
 
+      <!-- Below: Where the "about me" section is.-->
 
-  <main>
-    <div>
-      <article id="intro">
-        <h2>Hello World!</h2>
-        <img src = "images/profile-pic.jpg" alt = "Picture of Josh">
-        <section>
-          <header>
-            <h3 style="margin: auto;">My name is Joshua Vaughan.</h3>
-          </header>
-          <p>I am currently going through the Thinkful bootcamp Engineering Immersion program while living in Galveston, TX!</p>
-        </section> 
-      </article>
-
-
-      <hr>
-
-      <!-- about me below -->
-
-      <article id="about">
-        <section>
-          <header>
-            <h3>About Me</h3>
-          </header>
-          <p class = "about-me"> I began my journey to code during the COVID-19 crisis. After completing a contract position in April of 2020, I decided to pass the time by self teaching myself web development through <a href="https://www.freecodecamp.com" class = "link">FreeCodeCamp</a> and other free resources.</p>
-          <p class = "about-me">   One day, while taking a little break from my free learning resources, I stumbed upon an ad for <a href="https://www.thinkful.com" class = "link">Thinkful</a>, and decided to look in to it. After researching for a while, I became determined to make a career change. I was captivated by the skill that allowed me to create and perform anything that came to mind. I fell in love with the process and jumped in full-time.</p>
-          <p class = "about-me">   If you are seeking a new software developer or engineer, please feel free to <a href="index.html#contact" class = "link">Contact Me</a>! I am excited to continue on this path to work in the industry I have now found so much passion for!</p>
-          <p style="font-weight: bold;">Being a lifelong gaming enthusiast, I enjoy...</p>
-            <ul>
-            <li>Working with a team to achieve a common goal</li>
-            <li>Growing and learning from difficult objectives</li>
-            <li>Applying experience to help better the team and achieve victory!</li>
-            </ul>
+      <div id="about">
+        <h3 id="sub-header">About Me</h3>
+        <section id="aboutTxt">
+          <p>
+            I began my journey to code during the COVID-19 crisis. After
+            completing a contract position in April of 2020, I decided to pass
+            the time by self teaching myself web development through
+            FreeCodeCamp and other free resources. This idea came to me when a
+            few friends of mine decided they wanted to create a mobile app.
+            Needless to say, it was the only excuse I needed to learn to code -
+            a chance to work with some awesome people as part of a team to
+            create something useful!
+          </p>
+          <p>
+            One day, during a little longboarding break from my free learning
+            resources, I stumbed upon an ad for Thinkful while scrolling through
+            facebook on my phone and decided to look in to it. After researching
+            for a while, I became determined to make a career change.
+          </p>
+          <p>
+            Since that day, I have fallen in love with coding - from designing
+            gorgeous and intuitive front-ends, to efficient and functional
+            back-end. The opportunity to create things from scratch and develop
+            applications and websites that are needed in todays world allows me
+            the unique opportunity to solve problems and provide an avenue to
+            provide a service to those around me!
+          </p>
+          <p>
+            If you are seeking a new software developer or engineer, please feel
+            free to reach out! I am excited to continue on this path to work in
+            the industry I have now found so much passion for! I am willing and
+            able, currently, to assist in any and all web-development projects.
+            I look forward to hearing from you, and many thanks for checking out
+            my online portfolio!
+          </p>
         </section>
-      </article>
+      </div>
 
-      <hr>
+      <div class="projects">
+        <h3 class="sub-header">Projects</h3>
+        <div class="projectItem">
+          <h2 class="projectTitle">Project Title</h2>
+          <hr />
+          <div class="projectDescription">Project Description</div>
+          <div><h3>Skills Used: Skills that were used...</h3></div>
+          <a href="#" target="_blank">Project Repo Link</a>
+          <a href="#" target="_blank">Live Project Link</a>
+        </div>
+        <div class="projectItem">
+          <h2 class="projectTitle">Project Title</h2>
+          <hr />
+          <div class="projectDescription">Project Description</div>
+          <div><h3>Skills Used: Skills that were used...</h3></div>
+          <a href="#" target="_blank">Project Repo Link</a>
+          <a href="#" target="_blank">Live Project Link</a>
+        </div>
+        <div class="projectItem">
+          <h2 class="projectTitle">Project Title</h2>
+          <hr />
+          <div class="projectDescription">Project Description</div>
+          <div><h3>Skills Used: Skills that were used...</h3></div>
+          <a href="#" target="_blank">Project Repo Link</a>
+          <a href="#" target="_blank">Live Project Link</a>
+        </div>
+        <div class="projectItem">
+          <h2 class="projectTitle">Project Title</h2>
+          <hr />
+          <div class="projectDescription">Project Description</div>
+          <div><h3>Skills Used: Skills that were used...</h3></div>
+          <a href="#" target="_blank">Project Repo Link</a>
+          <a href="#" target="_blank">Live Project Link</a>
+        </div>
+      </div>
 
-<!-- contact info below -->
-
-      <article id="contact">
-        <section>
-          <header>
-            <h3>Contact Joshua</h3>
-          </header>
-          <p>If you wish to get in touch, or see some of my work, please feel free to check out the links below!</p>
-            <ol>
-              <li><a href="https://www.github.com/jvaughan007" class = "link">My Github</a></li>
-              <li><a href="https://www.linkedin.com/in/joshua-vaughan-4b24331a1/" class = "link">LinkedIn</a></li>
-              <li><a href="mailto:jvaughan007@yahoo.com" class = "link">Email</a></li>
-            </ol>
-
+      <div class="contact">
+        <h3 class="sub-header">Contact Joshua</h3>
+        <p>
+          Please feel free to contact me by clicking the links or filling out
+          the form below!
+        </p>
+        <section class="media-links">
+          <ul>
+            <li>
+              <a href="https://www.github.com/jvaughan007" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/joshua-vaughan-4b24331a1/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="mailto:jvaughan007@yahoo.com">Email</a></li>
+            <li>
+              <a href="form.html#formContainer" class="form-btn"> Contact </a>
+            </li>
+          </ul>
         </section>
-      </article>
-    </div>
-  </main>
+        <section class="email-form">
+          <form action="https://insights.hotjar.com/sites/1989878/dashboard" method="POST">
+            <label for="contactName"></label>
+            <input type="text" placeholder="e.g John Smith" id="contactName" />
+            <label for="contactEmail"></label>
+            <input
+              type="email"
+              placeholder="john.smith@gmail.com"
+              idS="contactEmail"
+            />
+            <label for="contactMessage">
+              <input
+                type="text"
+                placeholder="Type Message Here"
+                id="contactMessage"
+                
+              />
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+    </main>
 
-  <!-- main content ends here, footer is below -->
+    <!--Footer is below.-->
 
-  <footer>
-    <div>
-      <p>&copy;Joshua Vaughan</p>
-    </div>
-  </footer>
-    <script src="script.js"></script>
+    <footer>&copyJoshua Vaughan</footer>
+  
   </body>
 </html>
